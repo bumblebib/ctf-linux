@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Hackoon CTF - Comandos Linux </title>
+</head>
+<body>
+  <main>
+    <section id="screen-1" class="screen">
+      <div class="section-content">
+
+        <div class="section-title">
+          <img src="img/logo.png" alt="Logo da Hackoon">
+          <h1>Hackoon CTF</h1>
+        </div>
+      <p>
+        Fernando, um ex-integrante da Hackoon, se formou e deixou a atividade de extensão... <strong>mas esqueceu de nos passar os dados de acesso ao painel interno.</strong><br><br>
+        Investigando seus arquivos, encontramos um diretório com conteúdos suspeitos: <strong>arquivos ocultos, permissões restritas e informações fragmentadas.</strong><br><br>
+        Tudo indica que as credenciais ainda estão escondidas ali.<br><br>
+        <br>
+        🕵️ Sua missão: Use comandos linux explorar o sistema, investigar os diretórios e recuperar o usuário e a senha do painel da Hackoon.
+      </p>
+      
+      <a href="documentos/HackoonSpace2026.zip" download="HackoonSpace2026.zip">Baixar arquivos</a>
+
+      <button id="startButton">Começar missão</button>
+      </div>
+    </section>
+
+    <section id="screen-2" class="screen">
+      <div class="section-content">
+
+          <div class="section-title">
+            <img src="img/logo.png" alt="Logo da Hackoon">
+            <h1>Missão 1</h1>
+          </div>
+        <p>
+          Investigando o diretório <strong>arquivo_secreto</strong>, percebemos que os arquivos disponíveis não revelam tudo logo de cara.
+        </p>
+
+        <p>
+          Um dos registros deixados por Fernando sugere que a listagem padrão pode <strong>não ser suficiente para enxergar tudo.</strong>
+        </p>
+
+        <p>
+          Talvez seja necessário observar os arquivos com mais detalhes…
+        </p>
+
+        <p>
+          🎯 Encontre a primeira flag.
+        </p>
+        <input id="input-1" type="text" placeholder="Digite a flag 1" autocomplete="off" />
+        <button id="send-1">Enviar</button>
+        <p id="msg-1">Procure algo no formato hackoon{...}</p>
+      </div>
+    </section>
+
+    <section id="screen-3" class="screen">
+      <div class="section-content">
+
+        <div class="section-title">
+          <img src="img/logo.png" alt="Logo da Hackoon">
+          <h1>Missão 2</h1>
+        </div>
+        <p>
+          Ao sair de <strong>arquivos_secretos</strong>, você percebe que Fernando também deixou rastros em outros registros do sistema.
+        </p>
+
+        <p>
+          Na pasta de <strong>logs</strong>, há arquivos antigos e recentes, cheios de mensagens, avisos e informações aparentemente aleatórias.
+        </p>
+
+        <p>
+          Só que entre tantas linhas, algo importante parece ter sido dividido em <strong>partes</strong>.
+        </p>
+
+        <p>
+          Ler tudo manualmente pode até funcionar… mas provavelmente não é o jeito mais inteligente.
+        </p>
+
+        <div class="hint-box">
+          <strong>Dica 1:</strong> a próxima flag não está inteira em um só lugar.
+        </div>
+
+        <div class="hint-box">
+          <strong>Dica 2:</strong> em arquivos grandes, <strong>buscar</strong> costuma ser melhor do que ler linha por linha.
+        </div>
+
+        <div class="hint-box">
+          <strong>Dica 3:</strong> talvez exista uma palavra em comum ligando os fragmentos.
+        </div>
+
+        <p>
+          🎯 Monte a segunda flag a partir dos registros.
+        </p>
+        <input id="input-2" type="text" placeholder="Digite a flag 2" autocomplete="off" />
+        <button id="send-2">Enviar</button>
+        <p id="msg-2">Procure algo no formato hackoon{...}</p>
+      </div>
+    </section>
+
+    <section id="screen-4" class="screen">
+      <div class="section-content">
+
+        <div class="section-title">
+          <img src="img/logo.png" alt="Logo da Hackoon">
+          <h1>Missão Final</h1>
+        </div>
+      <p>
+        ⚠️ Este nível é mais desafiador. As pistas são mais sutis e exigem atenção aos detalhes.
+      </p>
+
+      <p>
+        No diretório <strong>sistema</strong>, nem tudo está acessível à primeira vista.
+      </p>
+
+      <div class="hint-box"><strong>Dica:</strong> pode ser uma questão de permissão.</div>
+      <div class="hint-box"><strong>Dica:</strong> nem tudo aparece em listagens comuns.</div>
+      <div class="hint-box"><strong>Dica:</strong> nem todo arquivo é só para leitura.</div>
+      <div class="hint-box"><strong>Dica:</strong> algumas informações foram transformadas.</div>
+
+      <p>
+        🎯 Descubra o <strong>login</strong> e a <strong>senha</strong>.
+      </p>
+
+      <label for="final-user">Usuário</label><br />
+      <input id="final-user" type="text" placeholder="Digite o usuário" autocomplete="off" />
+      <br /><br />
+
+      <label for="final-password">Senha</label><br />
+      <input id="final-password" type="text" placeholder="Digite a senha" autocomplete="off" />
+      <br /><br />
+
+      <button id="send-final">Enviar acesso</button>
+      <p id="msg-3">Procure por um login e senha escondidos...</p>
+      </div>
+    </section>
+
+    <section id="screen-5" class="screen">
+      <div class="section-content">
+
+        <div class="section-title">
+          <img src="img/logo.png" alt="Logo da Hackoon">
+          <h1>Parabéns 🎉</h1>
+        </div>
+        
+        <p>
+          Você concluiu o CTF de comandos Linux e recuperou nosso acesso 🎉
+        </p>
+
+        <p>
+          Fernando pode até ter tentado dificultar… mas você foi mais esperto.
+        </p>
+
+        <p>
+          🎯 Missão concluída.        
+        </p>
+              
+        <a class="link-painel" href="https://youtu.be/dQw4w9WgXcQ?si=JK7cGrlnWZUP4HOP">Ir para o painel da Hackoon</a>
+
+        <button id="resetButton">Reiniciar progresso</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
