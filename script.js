@@ -1,14 +1,5 @@
 const STORAGE_KEY = "hackoon_ctf_current_screen_v2";
 
-/*
- Substitua os hashes abaixo *pelos hashes reais.
-
- Para gerar no Linux:
- echo -n "hackoon{minha_flag}" | sha256sum
- echo -n "meu_usuario" | sha256sum
- echo -n "minha_senha" | sha256sum
- */
-
 const STEP_HASHES = {
   flag1: "b2ca4476051efcae2a907098a46dc299ac77074b55cd327336604c317f79df2c",
   flag2: "cd69fa9f487f4e74fca408b3ff20e1cb271d65e74bca7693bafdc10ccb873cf2",
