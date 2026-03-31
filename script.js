@@ -118,6 +118,13 @@ function resetProgress() {
       showScreen(1);
 }
 
+document.querySelectorAll(".back-button").forEach((button) => {
+  button.addEventListener("click", () => {
+    const previousScreen = Number(button.dataset.back);
+    showScreen(previousScreen);
+  });
+});
+
 document.getElementById("startButton").addEventListener("click", () => {
   showScreen(2);
 });

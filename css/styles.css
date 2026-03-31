@@ -196,6 +196,16 @@ input[type="text"]:focus {
   transform: translateY(-1px);
 }
 
+.download-box {
+  margin: 18px 0;
+  padding: 14px 18px;
+  border-left: 4px solid var(--gold-1);
+  background: rgba(255, 176, 0, 0.08);
+  border-radius: 12px;
+  color: var(--text-main);
+  font-size: 1rem;
+}
+
 /* botão e link com o mesmo estilo */
 button,
 a[download], .link-painel {
@@ -224,7 +234,7 @@ a[download], .link-painel {
 }
 
 button:hover,
-a[download]:hover, .link-painel {
+a[download]:hover, .link-painel:hover {
   transform: translateY(-2px) scale(1.01);
   filter: brightness(1.03);
   box-shadow:
@@ -233,7 +243,7 @@ a[download]:hover, .link-painel {
 }
 
 button:active,
-a[download]:active, .link-painel {
+a[download]:active, .link-painel:active {
   transform: translateY(1px) scale(0.99);
 }
 
@@ -328,4 +338,31 @@ a[download]:hover, .link-painel {
   background: rgba(255, 255, 255, 0.08);
   border-radius: 12px;
   color: #f7f2ff;
+}
+
+.top-actions {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 18px;
+}
+
+.back-button {
+  background: linear-gradient(135deg, rgba(255,255,255,0.18), rgba(255,255,255,0.08));
+  color: var(--text-main);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow:
+    0 8px 18px rgba(0, 0, 0, 0.22),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.12);
+}
+
+.back-button:hover {
+  transform: translateY(-2px) scale(1.01);
+  filter: brightness(1.06);
+  box-shadow:
+    0 12px 22px rgba(0, 0, 0, 0.26),
+    0 0 16px rgba(176, 124, 255, 0.18);
+}
+
+.back-button:active {
+  transform: translateY(1px) scale(0.99);
 }
